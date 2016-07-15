@@ -1,7 +1,18 @@
 # Complete the method called find_longest_word, which will accept a string as a parameter (usually a sentence), and return another string that will be the longest word in that sentence.
 
 def find_longest_word(sentence)
-
+  strings = sentence.split
+  i = 0
+  index = 0
+  max = 0
+  while i < strings.length
+    if max < strings[i].length
+      index = i
+      max = strings[i].length
+    end
+    i+=1
+  end
+  return strings[index]
 end
 
 # Driver code - don't touch anything below this line.
